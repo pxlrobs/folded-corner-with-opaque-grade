@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+	<title>foldedcorner-v7-home-V1 - XXXX</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<meta name="author" content="">
+<link href="app.css" rel="stylesheet">
+	<style>
+
+body {
+	background-color: white; 
+		 background: url(https://i.ytimg.com/vi/2XX5zDThC3U/maxresdefault.jpg) no-repeat 0 0; 
+	background-size: cover;
+}
+
+.note {
+  width: 300px;
+  padding: 5%;
+/*  background-color: cornflowerblue;*/
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+  -moz-clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+  -ms-clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 90% 0, 100% 10%, 100% 100%, 0 100%);
+  position: relative;
+
+  margin: 5em auto 1em auto;
+
+background: rgba(134,174,204,1);
+background: -moz-linear-gradient(left, rgba(134,174,204,1) 0%, rgba(212,228,239,0.5) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(134,174,204,1)), color-stop(100%, rgba(212,228,239,0.5)));
+background: -webkit-linear-gradient(left, rgba(134,174,204,1) 0%, rgba(212,228,239,0.5) 100%);
+background: -o-linear-gradient(left, rgba(134,174,204,1) 0%, rgba(212,228,239,0.5) 100%);
+background: -ms-linear-gradient(left, rgba(134,174,204,1) 0%, rgba(212,228,239,0.5) 100%);
+background: linear-gradient(to right, rgba(134,174,204,1) 0%, rgba(212,228,239,0.5) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86aecc', endColorstr='#d4e4ef', GradientType=1 );
+
+/* SASS for above per http://www.cssmatic.com/gradient-generator / http://tinyurl.com/hjrr28n
+
+background-color: rgba(134,174,204,1);
+background: @include filter-gradient(#86aecc, #d4e4ef, horizontal);
+background: @include background-image(linear-gradient(left, rgba(134,174,204,1) 0%, rgba(212,228,239,0.5) 100%));
+
+*/
+}
+
+/* 
+.note::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 10%;
+  -webkit-clip-path: polygon(0,0 100% 100%, 0 100%);
+  -moz-clip-path: polygon(0,0 100% 100%, 0 100%);
+  -ms-clip-path: polygon(0,0 100% 100%, 0 100%);
+  clip-path: polygon(0,0 100% 100%, 0 100%);
+  background-color: black;
+  opacity: 0.5;
+  right: 0;
+  top: 0;
+}
+ */
+
+
+.fold {
+  position: absolute;
+  top: 15px;
+  right: -15px;
+  width: 15px;
+  height: calc(100% - 15px); /*WTF?!?*/
+  background-color: inherit;
+}
+
+.fold::before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  border-top: 15px solid transparent; /* top right */
+  border-left: 15px solid firebrick; /* bottom left */
+}
+.fold::after { /* this psuedo-element appears "UNDER" the before */
+  content: "";
+  position: absolute;
+  top: -15px;
+  border-top: 15px solid transparent; /*  top right */
+  border-left: 15px solid firebrick; /* bottom left */
+  opacity: 0.5;
+}
+
+.note2 {
+  /* background-color: firebrick; */
+  padding: 5%;
+  position: relative;
+  width: 400px;
+
+    margin: 5em auto 1em auto;
+
+background: rgba(134,174,204,1);
+background: linear-gradient(to right, rgba(134,174,204,1) 0%, rgba(212,228,239,0.5) 100%);
+/*
+background: -moz-linear-gradient(left, rgba(134,174,204,1) 0%, rgba(212,228,239,0.5) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(134,174,204,1)), color-stop(100%, rgba(212,228,239,0.5)));
+background: -webkit-linear-gradient(left, rgba(134,174,204,1) 0%, rgba(212,228,239,0.5) 100%);
+background: -o-linear-gradient(left, rgba(134,174,204,1) 0%, rgba(212,228,239,0.5) 100%);
+background: -ms-linear-gradient(left, rgba(134,174,204,1) 0%, rgba(212,228,239,0.5) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#86aecc', endColorstr='#d4e4ef', GradientType=1 );
+*/
+
+}
+
+/* 
+.note2::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 10%;
+
+  clip-path: polygon(0,0 100% 100%, 0 100%);
+  background-color: black;
+  opacity: 0.5;
+  right: 0;
+  top: 0;
+ 
+  -webkit-clip-path: polygon(0,0 100% 100%, 0 100%);
+  -moz-clip-path: polygon(0,0 100% 100%, 0 100%);
+  -ms-clip-path: polygon(0,0 100% 100%, 0 100%);
+*/  
+}
+
+	</style>
+
+	</head>
+	<body>
+
+	<div class="container">
+
+
+<div class="note">
+Css clip-path (THIS USES CLIP PATH - seems to have issues w/) ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia lorem vel purus scelerisque tincidunt. Nulla semper magna eget mauris semper, vel viverra urna lacinia. Maecenas feugiat molestie ante a faucibus. Donec mollis pulvinar nisi, pretium ullamcorper dui molestie lacinia. Quisque arcu massa, sollicitudin nec magna quis, tempus pulvinar est. Integer non consectetur quam. Sed nulla quam, luctus ut elit sit amet, sagittis condimentum nisi.
+
+In quis ipsum tellus. Proin in imperdiet felis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer venenatis, nunc non congue pellentesque, diam enim consectetur libero, vitae fermentum lectus risus vitae ligula. Donec tristique sollicitudin mi quis condimentum. In eget diam viverra, elementum nisi vitae, euismod elit. Nulla facilisi. Nullam et odio efficitur, rutrum orci sit amet, convallis ante. Nulla metus lorem, euismod non ante mollis, facilisis egestas arcu. Sed arcu tortor, lacinia a nibh sed, laoreet iaculis arcu. Quisque vel lacus ut felis ornare molestie a eget purus. Cras est elit, euismod sit amet magna ut, cursus auctor erat. Proin eu ante lorem.
+</div>
+
+<br /><br /><br />
+
+<div class="note2">
+  <span class="fold"></span>
+  Css span (THIS USES STANDARD CSS )ipsum dolor sit amet, consectetur adipiscing elit. Aenean lacinia lorem vel purus scelerisque tincidunt. Nulla semper magna eget mauris semper, vel viverra urna lacinia. Maecenas feugiat molestie ante a faucibus. Donec mollis pulvinar nisi, pretium
+  ullamcorper dui molestie lacinia. Quisque arcu massa, sollicitudin nec magna quis, tempus pulvinar est. Integer non consectetur quam. Sed nulla quam, luctus ut elit sit amet, sagittis condimentum nisi. In quis ipsum tellus. Proin in imperdiet felis.
+  Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer venenatis, nunc non congue pellentesque, diam enim consectetur libero, vitae fermentum lectus risus vitae ligula. Donec tristique sollicitudin mi quis condimentum.
+  In eget diam viverra, elementum nisi vitae, euismod elit. Nulla facilisi. Nullam et odio efficitur, rutrum orci sit amet, convallis ante. Nulla metus lorem, euismod non ante mollis, facilisis egestas arcu. Sed arcu tortor, lacinia a nibh sed, laoreet
+  iaculis arcu. Quisque vel lacus ut felis ornare molestie a eget purus. Cras est elit, euismod sit amet magna ut, cursus auctor erat. Proin eu ante lorem.
+</div>
+
+<br /><br /><br />
+
+	</div> 
+
+	<script>/* */</script>
+	</body>
+</html>
