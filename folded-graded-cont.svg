@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 523" preserveAspectRatio="xMinYMin meet" fill="url(#gradientName)">
+	<defs>
+		<linearGradient id="gradientName">
+			<stop offset="0%" stop-color="rgba(89,178,214,1)" />
+			<stop offset="100%" stop-color="rgba(0,77,108,0.5)" />
+		</linearGradient>
+	</defs>
+	<polygon class="a" points="1400 523 0 523 0 0 1357 0 1400 42 1400 523"/>
+</svg>
